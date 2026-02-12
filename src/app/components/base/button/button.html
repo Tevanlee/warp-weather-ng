@@ -1,0 +1,7 @@
+<button [disabled]="loading" [ngClass]="[class]">
+  @if (loading) {
+    <lucide-icon [img]="Loader" class="animate-spin w-5 h-5"></lucide-icon>
+  } @else {
+    <ng-content> </ng-content>
+  }
+</button>

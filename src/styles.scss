@@ -1,0 +1,54 @@
+@use 'tailwindcss';
+
+:root {
+  /* Colors */
+  --bg: #fdfdfd;
+  --surface: #f9f9f9;
+  --primary: #007aff;
+  --text: #111111;
+  --border: #e5e5e7;
+
+  /* Font Size */
+  --font-display: 78px;
+  --font-h1: 62px;
+  --font-h2: 40px;
+  --font-h3: 26px;
+  --font-h4: 20px;
+  --font-body-lg: 18px;
+  --font-body: 15px;
+  --font-body-sm: 14px;
+  --font-caption: 12px;
+  --font-size-heading-xl: 78px;
+  --font-size-heading-lg: 50px;
+  --font-size-heading-md: 36px;
+  --font-size-heading-sm: 24px;
+  --font-size-body: 15px;
+  --font-size-caption: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0c0c;
+    --surface: #1a1a1a;
+    --primary: #0a84ff;
+    --text: #f5f5f7;
+    --border: #2a2a2c;
+  }
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* Remove Chrome autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  caret-color: unset;
+
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: var(--text);
+}

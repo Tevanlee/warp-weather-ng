@@ -1,0 +1,17 @@
+<app-form class="relative mb-4" (submit)="onSubmit()">
+  <app-input
+    id="search"
+    placeholder="Enter a city"
+    [value]="city"
+    [ariaDisabled]="isLoading"
+    (valueChange)="onCityChange($event)"
+  />
+
+  <app-button
+    [loading]="isLoading"
+    [ariaDisabled]="isLoading"
+    class="absolute w-fit top-1.25 right-2"
+  >
+    <lucide-icon [img]="SearchIcon" [size]="20" />
+  </app-button>
+</app-form>

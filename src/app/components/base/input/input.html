@@ -1,0 +1,11 @@
+<input
+  [id]="id"
+  [type]="type"
+  [placeholder]="placeholder"
+  [value]="value"
+  (input)="onInput($event)"
+  [ngClass]="[
+    'input w-full rounded-lg border px-4 py-2.5 text-sm font-light outline-0 transition-colors duration-200',
+    class,
+  ]"
+/>

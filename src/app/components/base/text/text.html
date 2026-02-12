@@ -1,0 +1,9 @@
+<div
+  [ngClass]="[
+    'text leading-normal font-normal relative',
+    loading ? 'bg-surface animate-pulse rounded-md text-transparent' : '',
+    class,
+  ]"
+>
+  <ng-content></ng-content>
+</div>

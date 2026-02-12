@@ -1,0 +1,20 @@
+.text {
+  color: var(--text);
+
+  &.display {
+    font-size: var(--font-display);
+    line-height: var(--font-display);
+  }
+
+  &.body-lg {
+    font-size: var(--font-body-lg);
+  }
+
+  &.body {
+    font-size: var(--font-body);
+  }
+
+  &.body-sm {
+    font-size: var(--font-body-sm);
+  }
+}

@@ -1,0 +1,18 @@
+<app-wrapper>
+  <div class="content mt-14 flex flex-col items-center max-w-sm m-auto">
+    <h1 class="text-4xl font-medium text-center mb-5">Warp Weather</h1>
+
+    <!-- Search -->
+    <app-search
+      class="w-full"
+      [city]="city()"
+      [isLoading]="loading()"
+      [error]="error()"
+      (cityChange)="setCity($event)"
+      (search)="onSearch()"
+    />
+
+    <!-- Results -->
+    <app-results class="w-full" [weather]="weather()" [error]="error()" />
+  </div>
+</app-wrapper>
