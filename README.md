@@ -1,17 +1,31 @@
-# WarpWeatherNg
+# Warp Weather App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.3.
+A simple weather application built with Angular 21.1.3.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Instructions on how to run the application locally
+
+### 1. Install dependencies
+
+Install the required project dependencies:
+
+```bash
+npm install
+```
+
+### 2. Setup environment variables
+
+Locate the src/environments folder and paste your API key.
+
+### 3. Run the development server
+
+Start the development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 4. Open the application
 
-## Setup environment variables
-
-Locate the environments folder at src/environments and paste your API key in order to test the application.
+Open the application in your browser to view and test: `http://localhost:4200/`
